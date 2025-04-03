@@ -1,0 +1,163 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Центрируем по вертикали */
+    min-height: 100vh;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(167, 138, 138);
+  }
+  
+  /* Главная страница */
+  .container {
+    text-align: center;
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  
+  #search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 60%;
+    margin-left: 176px;
+  }
+  
+  #search-box {
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    width: 80%;
+  }
+  
+  button {
+    padding: 0 20px;
+    background-color: #4285f4;
+    color: white;
+    font-size: 29px;
+    border-radius: 0 30px 30px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #357ae8;
+  }
+  
+  /* Стиль для страницы результатов */
+  .results-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Центрируем контент */
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh; /* Растягиваем страницу на весь экран */
+    background-color: #f9f9f9;
+    background-color: rgb(167, 138, 138);
+  }
+  
+  #search-form-results {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #search-box-results {
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #ccc;
+    width: 800px;
+  }
+  
+  button.search-btn {
+    padding: 0 20px;
+    background-color: #4285f4;
+    color: white;
+    font-size: 32px;
+    border-radius: 0 30px 30px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.search-btn:hover {
+    background-color: #357ae8;
+  }
+  
+  .result {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; /* Максимальная ширина результатов */
+  }
+  
+  .result a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a0dab;
+    text-decoration: none;
+  }
+  
+  .result a:hover {
+    text-decoration: underline;
+  }
+  
+  .result p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  #results-container {
+    margin-top: 20px;
+    flex-grow: 1; /* Это заставляет контейнер результатов занимать оставшееся пространство */
+    overflow-y: auto; /* Добавляем вертикальную прокрутку */
+    padding-right: 10px; /* Немного отступа справа для прокрутки */
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    #search-form {
+      width: 80%;
+    }
+  
+    .logo {
+      width: 120px;
+    }
+  
+    #search-box {
+      font-size: 16px;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+  }
+  
